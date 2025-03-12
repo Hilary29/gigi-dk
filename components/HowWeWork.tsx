@@ -1,6 +1,7 @@
 import type React from "react"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 interface HowWeWorkCardProps {
   title: string
@@ -26,12 +27,12 @@ const HowWeWorkCard: React.FC<HowWeWorkCardProps> = ({
           <p className="text-base text-[#4B4B4B] leading-6">{description}</p>
         </div>
 
-        <button className="flex items-center gap-1.5 text-[#06A5DB] font-medium">
+        <Link href='/' className="flex items-center gap-1.5 text-[#06A5DB] font-medium">
           Learn More
           <span className="w-5 h-5 border border-[#06A5DB] rounded-full flex items-center justify-center">
             <ArrowRight size={12} className="text-[#06A5DB]" />
           </span>
-        </button>
+        </Link>
       </div>
     </div>
   )
