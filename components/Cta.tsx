@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Cta() {
   return (
-    <section className="w-full max-w-6xl mx-auto px-4 py-8 md:py-12">
+    <section className="w-full max-w-6xl mx-auto px-4 py-8 md:py-16">
       <div 
         className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10 
                   bg-[#FF8486] rounded-[14px] p-6 md:p-10 lg:p-[78px_31px]"

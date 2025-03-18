@@ -2,23 +2,19 @@
 
 import { useState } from "react";
 import { EyeOff, Eye } from "lucide-react";
-import Image from "next/image";
 
 export default function Page() {
   const [showPassword, setShowPassword] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-
-  const handleSubmit = async () => {
-
-  };
+  const handleSubmit = async () => {};
 
   return (
     <div className="flex  justify-center  p-4">
-      <div className="flex w-full max-w-[560px] flex-col items-center rounded-lg bg-white-50 p-6 md:p-10">
+      <div className="flex w-full max-w-[560px] flex-col items-center rounded-lg bg-white p-6 md:p-10">
         <div className="w-full max-w-[480px] space-y-8">
-          <p className="font-satoshi text-2xl font-semibold leading-9 text-black-50 md:text-heading-desktop-h4">
+          <p className=" text-2xl font-semibold leading-9 text-black-50 md:text-heading-desktop-h4">
             Sign in to your account
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -93,7 +89,7 @@ export default function Page() {
 
               <button
                 type="submit"
-                className="w-full rounded-md bg-[#2FB551] py-3 font-inter text-paragraph-md font-medium text-white-50 hover:bg-[#2FB551]/90"
+                className="w-full rounded-md bg-primary-500 py-3 font-inter text-paragraph-md font-medium text-white hover:bg-primary-600"
               >
                 Sign in
               </button>
@@ -103,10 +99,9 @@ export default function Page() {
                 Or sign In with
               </p>
               <div className="flex justify-center  space-x-8">
-                <div className="grid grid-cols-3 gap-8 mx-16">
-
+                <div className="grid grid-cols-2 gap-8 mx-16">
                   <div className="relative group">
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-500 text-white-50 text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-[#00000046] text-white-50 text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
                       google
                     </div>
                     <button
@@ -135,38 +130,22 @@ export default function Page() {
                   </div>
 
                   <div className="relative group">
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-500 text-white-50 text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-[#00000046] text-white-50 text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
                       Facebook
                     </div>
                     <button
                       type="button"
                       className="flex w-full items-center justify-center gap-2 rounded-lg border border-[#D6D6D6] px-3 py-2.5 text-sm font-medium hover:bg-gray-50"
                     >
-                      <svg className="h-5 w-5" fill="#1877F2" viewBox="0 0 24 24">
+                      <svg
+                        className="h-5 w-5"
+                        fill="#1877F2"
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                       </svg>
                     </button>
                   </div>
-
-
-                  <div className="relative group">
-                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-500 text-white-50 text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                      Yowyob
-                    </div>
-                    <button
-                      type="button"
-                      className="flex w-full items-center justify-center gap-2 rounded-lg border border-[#D6D6D6] px-3 py-2.5 text-sm font-medium hover:bg-gray-50"
-                    >
-                      <Image
-                        src="/images/yowyob.png"
-                        alt="yowyob"
-                        width={32}
-                        height={32}
-                        className=""
-                      />
-                    </button>
-                  </div>
-
                 </div>
               </div>
             </div>

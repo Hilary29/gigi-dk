@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Loading() {
   return (
-    <div className="flex items-center justify-center bg-white">
+    <div className="flex items-center justify-center bg-white pt-8 sm:pt-16">
       <div className="flex flex-col items-center">
         {/* Logo centré */}
         <Image

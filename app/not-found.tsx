@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function NotFound() {
   return (
     <div>
-      <div className="flex items-center justify-center  bg-white">
+      <div className="flex items-center justify-center  bg-white pt-8 sm:pt-16">
         <div className="flex flex-col items-center">
           {/* Logo centré */}
           <Image
