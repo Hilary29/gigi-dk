@@ -14,17 +14,17 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full px-4 md:px-8 flex justify-between items-center bg-white">
+    <header className="fixed top-0 left-0 z-50 w-full px-4 sm:px-8 flex justify-between items-center bg-white">
       {/* Logo and Name */}
-      <div className="flex items-center gap-2 h-20">
+      <Link href='/' className="flex items-center gap-2 h-16">
         <Image
           src="/images/gigidknails.png"
           alt="Logo"
-          width={183}
+          width={164}
           height={80}
           className="object-contain"
         />
-      </div>
+      </Link>
 
       {/* Mobile Menu Button */}
       <button
@@ -69,7 +69,7 @@ const Header = () => {
         </Link>
         <Link
           href="/signup"
-          className="bg-[#7A0002] text-white font-medium text-base px-4 py-[10px] rounded-md"
+          className="bg-primary-500 hover:bg-primary-600 text-white font-medium text-base px-4 py-[10px] rounded-md"
         >
           Sign up
         </Link>

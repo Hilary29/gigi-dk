@@ -117,7 +117,7 @@ export default function Gallery() {
 
         {/* See More button */}
         <div className="flex justify-center w-full mt-4">
-          <Link href='/' className="flex items-center gap-2 text-[#7A0002] font-semibold text-lg">
+          <Link href='/gallery' className="flex items-center gap-2 text-[#7A0002] font-semibold text-lg">
             See More
             <div className="bg-[#FFDFDF] rounded-full w-10 h-10 flex items-center justify-center">
               <ChevronRight className="text-[#7A0002]"/>

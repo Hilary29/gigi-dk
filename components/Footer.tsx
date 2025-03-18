@@ -6,36 +6,39 @@ import { FaX } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white py-8 px-6 sm:px-12 w-full">
+    <footer className="bg-white py-8 px-6 sm:px-8 w-full">
       <div className=" mx-auto">
         <div className="flex flex-col  lg:flex-row justify-between mb-8">
           <div className="mb-16 lg:mb-0">
             <div className="flex items-center mb-4">
-              <Link className="flex items-center gap-2" href={"/"}>
+              <Link href="/" className="flex items-center gap-2 h-16">
                 <Image
-                  src='/images/gigidknails.png'
-                  alt="Agrinet logo"
-                  width={200}
-                  height={100}
-                  className="w-48 h-[82px]"
+                  src="/images/gigidknails.png"
+                  alt="Logo"
+                  width={164}
+                  height={80}
+                  className="object-contain"
                 />
               </Link>{" "}
             </div>
             <div className="text-[#626362] mb-10">
-              <Link 
-              href='/'
-              className="text-secondary-500 hover:text-secondary-600 ">contact@gigi-dknails.com</Link>
+              <Link
+                href="/"
+                className="text-secondary-500 hover:text-secondary-600 "
+              >
+                contact@gigi-dknails.com
+              </Link>
               <p>Yaounde, Cameroon</p>
             </div>
             <div className="flex space-x-6 cursor-pointer">
               <FaFacebook className="w-5 h-5 text-gray-800" />
-              <FaX className="w-5 h-5 text-gray-800"/>
+              <FaX className="w-5 h-5 text-gray-800" />
               <FaInstagram className="w-5 h-5 text-gray-800" />
               <FaLinkedin className="w-5 h-5 text-gray-800" />
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 md:gap-16 xl:gap-36">
-          <div>
+            <div>
               <h3 className="text-[#072B1C] font-medium mb-4">Company</h3>
               <ul className="space-y-2">
                 <li>
@@ -60,7 +63,7 @@ const Footer: React.FC = () => {
                 </li>
               </ul>
             </div>
-          <div>
+            <div>
               <h3 className="text-[#072B1C] font-medium mb-4">Enterprise</h3>
               <ul className="space-y-2">
                 <li>
@@ -70,12 +73,12 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link href="/about" className="text-[#4B4B4B]">
-                   Gallery
+                    Gallery
                   </Link>
                 </li>
                 <li>
                   <Link href="/pricing" className="text-[#4B4B4B]">
-                    Partenary 
+                    Partenary
                   </Link>
                 </li>
               </ul>
@@ -130,7 +133,8 @@ const Footer: React.FC = () => {
         <div className="border-t border-[#E1E1E1] pt-10">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p className="text-[#626362] mb-4 sm:mb-0">
-              © {new Date().getFullYear()} GigiDk Nails Inc. All Rights Reserved.
+              © {new Date().getFullYear()} GigiDk Nails Inc. All Rights
+              Reserved.
             </p>
 
             <div className="flex items-center space-x-6">
