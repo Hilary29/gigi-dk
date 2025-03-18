@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className=" bg-primary-50 bg-cover bg-center min-h-screen flex flex-col pt-32 lg:pt-4">
+    <main className=" bg-primary-50 bg-cover bg-center min-h-screen flex flex-col pt-16 sm:pt-12 lg:pt-8">
       <Link className="flex items-center gap-2 mx-auto pb-8 lg:pb-16 " href={"/"}>
         <Image src='/images/gigidknails.png' alt="Agrinet logo" className="" width={180} height={126}/>
       </Link>

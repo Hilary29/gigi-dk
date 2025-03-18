@@ -32,7 +32,7 @@ export default function Page() {
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="Username"
                   required
-                  className="w-full rounded-lg border border-[#D6D6D6] p-3 font-inter text-base focus:border-[#2FB551] focus:outline-none focus:ring-1 focus:ring-[#2FB551]"
+                  className="w-full rounded-lg border border-[#D6D6D6] p-3 font-inter text-base focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
                 />
               </div>
 
@@ -46,7 +46,7 @@ export default function Page() {
                   </label>
                   <a
                     href="/forgot-password"
-                    className="font-inter text-base font-medium text-[#2FB551] hover:underline"
+                    className="font-inter text-base font-medium text-primary-300 hover:text-primary-400 hover:underline"
                   >
                     Forgot your password?
                   </a>
@@ -58,7 +58,7 @@ export default function Page() {
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Password"
                     required
-                    className="w-full rounded-lg border border-[#D6D6D6] p-3 pr-12 font-inter text-base focus:border-[#2FB551] focus:outline-none focus:ring-1 focus:ring-[#2FB551]"
+                    className="w-full rounded-lg border border-[#D6D6D6] p-3 pr-12 font-inter text-base focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
                   />
                   <button
                     type="button"
@@ -80,7 +80,7 @@ export default function Page() {
                 <input
                   type="checkbox"
                   name="remember"
-                  className="h-5 w-5 rounded border-[#C3C3C3] text-primary-500 focus:ring-[#2FB551]"
+                  className="h-5 w-5 rounded border-[#C3C3C3] text-primary-500 focus:ring-primary-500"
                 />
                 <span className="font-inter text-base text-[#1E1E1E]">
                   Remember me
@@ -153,7 +153,7 @@ export default function Page() {
 
           <p className="text-center font-inter text-paragraph-md font-medium text-[#1E1E1E]">
             New to Agrinet?{" "}
-            <a href="/signup" className="text-[#2FB551] hover:underline">
+            <a href="/signup" className="text-primary-300 hover:text-primary-400 hover:underline">
               Create account
             </a>
           </p>

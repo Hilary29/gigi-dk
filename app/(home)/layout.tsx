@@ -1,12 +1,16 @@
-
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export default function RootLayout({
-    children,
-  }: Readonly<{
-    children: React.ReactNode;
-  }>) {
-    return (
-      <main className="min-h-screen">{children}</main>
-    );
-  }
-  
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <>
+      <Header />
+      <main className="min-h-screen p-20 ">{children}</main>
+      <Footer />
+    </>
+  );
+}

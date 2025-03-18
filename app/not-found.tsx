@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function NotFound() {
   return (
     <div>
-      <div className="flex items-center justify-center  bg-white pt-8 sm:pt-16">
-        <div className="flex flex-col items-center">
+      <div className="flex items-center justify-center  bg-white pt-8 sm:pt-20">
+        <div className="flex flex-col items-center gap-4">
           {/* Logo centré */}
           <Image
             src="/images/gigidknails.png"
@@ -18,7 +18,7 @@ export default function NotFound() {
           </div>
           <Link
             href="/"
-            className="text-primary-500 border-2 border-primary-500 rounded-lg p-2 hover:text-primary-600 hover:border-primary-600 font-medium"
+            className="bg-primary-500 border-2 text-white rounded-lg p-2 hover:bg-primary-600 font-medium"
           >
             Back Home
           </Link>

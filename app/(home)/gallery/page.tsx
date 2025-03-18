@@ -1,9 +1,10 @@
+import IntroText from '@/components/IntroText'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      Gallery page
+      <IntroText title={'Gallery'} description={'Discover our beautiful design'}/>
     </div>
   )
 }
